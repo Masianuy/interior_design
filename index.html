@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate">
+    <meta name="author" content="Ideal HOUSE">
+     <!--Favicon-->
+     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon"/>
+    <!-- CUSTOM STYLE CSS-->
+    <link  href="js/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- HEADER
+      ============================== -->
+      <header>
+        <div class="header-top">
+          <p class="header-top__city">Ваше місто:
+            <select class="header-top__city-select" name="city">
+              <option value="#" selected="selected">Київ</option>
+              <option value="#">Ірпінь</option>
+              <option value="#">Буча</option>
+              <option value="#">Гостомель</option>
+              <option value="#">Ворзель</option>
+              <option value="#">Бориспіль</option>
+              <option value="#">Вишгород</option>
+            </select>
+            <span class="icon-caret-down2"></span>
+          </p>
+          <form role="search" method="get" id="searchform" class="header__search" action="https://ih13/">
+            <input type="text" value="" name="s" id="s" class="search-field">
+            <input type="submit" id="searchsubmit" value=" ">
+            <svg width="30" height="30" fill="#e1c32f" class="search-send">
+              <use href="#search"></use>
+            </svg>
+          </form>
+          <div class="header-top__contacts">
+            <p>Буча, вул. Івана Кожедуба, 3А</p>
+            <p>ЖК "Millennium State"</p>
+          </div>
+          <div class="header-top__contacts">
+            <p>пн-пт - 9.00 - 18.00</p>
+            <p>сб - 9.00 - 14.00</p>
+            <p>нд - вихідний</p>
+          </div>
+        </div>
+        <div class="header-middle">
+          <a id="header-logo" href="/">
+            <img id="logo_big" src="img/icons/logo.svg" alt="logo">
+          </a>
+          <ul class="header-middle__menu">
+            <li class="header-middle__menu-item">
+              <a href="about-us.html" class="header-middle-menu-link">Про нас</a>
+            </li>
+            <li class="header-middle__menu-item">
+              <a href="#" class="header-middle-menu-link">Калькулятор</a>
+            </li>
+            <li class="header-middle__menu-item">
+              <a href="#" class="header-middle-menu-link">Ціни</a>
+            </li>
+            <li class="header-middle__menu-item">
+              <a href="#" rel="nofollow" class="header-middle-menu-link">Портфоліо</a>
+            </li>
+            <li class="header-middle__menu-item">
+              <a href="#" rel="nofollow" class="header-middle-menu-link">Акції і скидки</a>
+            </li>
+            <li class="header-middle__menu-item">
+              <a href="#" rel="nofollow" class="header-middle-menu-link">Контакти</a>
+            </li>
+          </ul>
+          <div class="header-middle__contact">
+            <div class="header-middle__phone">
+              <a href="tel:+38099 099 99 99" class="header-middle__phone-number">+38 099 099 99 99</a>
+            </div>
+            <a data-fancybox data-src="#modal" href="javascript:;" class="header-middle__callback modal__popup">
+              <svg width="28" height="28" class="header-middle__callback-icon">
+                <use href="#icon_phone"/>
+              </svg>
+              <span>Замовити дзвінок</span>
+            </a>
+          </div>
+          
+          <nav class="header__big-menu">
+            <button class="big-menu button_hamburger"><span></span type="button"></button>
+          </nav>
+
+          <nav id="menu-hidden__wrap" class="menu-hidden__wrap">
+            <ul class="menu-hidden__list">
+              <li>
+                <a href="about_us.html" title="Про нас">Ремонт квартир</a>
+                <ul class="submenu">
+                  <li class="submenu__item">
+                    <a href="#">Ремонт квартир</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#">Ремонт квартир</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#">Ремонт квартир</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#">Ремонт квартир</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#">Ремонт квартир</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#">Ремонт квартир</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="features.html" title="Послуги">Ремонт кімнат</a>
+                <ul class="submenu">
+                  <li class="submenu__item">
+                    <a href="#">Ремонт кімнат</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#">Ремонт кімнат</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#">Ремонт кімнат</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#">Ремонт кімнат</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="portfolio.html" title="Портфоліо">Ремонт будинків</a>
+              </li>
+              <li>
+                <a href="contact.html" title="Контакти">Дизайн</a>
+              </li>
+              <li>
+                <a href="features.html" title="Послуги">Фасад</a>
+              </li>
+              <li>
+                <a href="portfolio.html" title="Портфоліо">Оздоблення</a>
+              </li>
+              <li>
+                <a href="portfolio.html" title="Портфоліо">УКР</a>
+              </li>
+              <li>
+                <a href="portfolio.html" title="Портфоліо">РУС</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- <div id="modal">
+            <div id="modal-window">
+              <p class="modal__title">Замовити дзвінок</p>
+              <div class="modal__inner">
+                <div class="modal__inner-item modal__inner-item-1">
+                  <img src="img/icons/face.png" alt="face">
+                  <p class="modal__inner-item-time">Перезвоним в течение 5-10 минут с 8:00 до 22:00 </p>
+                </div>
+                <div class="modal__inner-item modal__inner-item-2">
+                  <form method="get">
+                    <label for="mname">Ваше ім'я</label><br>
+                    <input type="text" id="mname" name="mname" placeholder="Alex"><br>
+                    <label for="lname">Номер телефону</label><br>
+                    <input type="tel" value="+380" required id="lname" name="lname"><br><br>
+                    <input type="submit" value="Відправити" class="btn-gold modal__popup">
+                  </form> 
+                </div>
+                <div class="modal__inner-item modal__inner-item-3">
+                  <p class="modal__inner-item-text">Бесплатно проконсультируем по ремонтным вопросам</p>
+                  <p class="modal__inner-item-text">Бесплатно проконсультируем по ремонтным вопросам</p>
+                  <p class="modal__inner-item-text">Бесплатно проконсультируем по ремонтным вопросам</p>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+        </div>
+      </header>
+      <nav class="header-bottom header-bottom__main-menu-fixed">
+        <ul class="main-menu__list">
+          <li>
+            <a href="remont-kvartir.html">Ремонт квартир</a>
+          </li>
+          <li>
+            <a href="features.html">Ремонт кімнат</a>
+          </li>
+          <li>
+            <a href="portfolio.html">Ремонт будинків</a>
+          </li>
+          <li>
+            <a href="contact.html">Дизайн</a>
+          </li>
+          <li>
+            <a href="features.html">Фасад</a>
+          </li>
+          <li>
+            <a href="portfolio.html">Оздоблення</a>
+        </ul>
+      </nav>
+
+    <!-- SECTION CALCULATE
+    =================================== -->
+    <section id="section-calculate" class="parallax parallax_calculate">
+      <div class="container">
+        <h1 class="section-title section-calculate__title">Зробимо ремонт квартири в Бучі під ключ — без турбот, затримок та переплат!</h1>
+        <div class="section-calculate__inner">
+          <ul class="section-calculate__features">
+            <li class="section-calculate__features-item"><img src="img/icons/materials-1.svg" alt="" class="calculate__features-img">Гарантія до 3 років на всі роботи</li>
+            <li class="section-calculate__features-item"><img src="img/icons/materials-1.svg" alt="" class="calculate__features-img">Професiйні майстри</li>
+            <li class="section-calculate__features-item"><img src="img/icons/materials-1.svg" alt="" class="calculate__features-img">Контроль якості робіт на всіх етапах</li>
+            <li class="section-calculate__features-item"><img src="img/icons/materials-1.svg" alt="" class="calculate__features-img">Фіксована ціна проєкта</li>
+            <li class="section-calculate__features-item"><img src="img/icons/materials-1.svg" alt="" class="calculate__features-img">Вчасне виконання проекту</li>
+          </ul>
+          <div class="section-calculate__calculate"></div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SECTION TARIFFS
+    =================================== -->
+    <section id="section-tariffs" class="parallax parallax_tariffs">
+      <div class="container">
+        <p class="section-title tariffs__title">Тарифи</p>
+
+        <div class="tariffs__switch">
+          <label class="toggler toggler-active" id="filt-newbud">Новобудова</label>
+          <div class="toggle">
+            <input type="checkbox" id="switcher" class="check">
+            <b class="switch-ball switch"></b>
+          </div>
+          <label class="toggler" id="filt-secondbud">Вторинне житло</label>
+        </div>
+
+        <div id="newbud" class="tariffs__inner">
+          <div class="tariffs__item tariffs__slide tariffs__slide-active">
+            <div class="tariffs__item-marker tariffs__item-marker-1"></div>
+            <div class="tariffs__item-text">
+              <h5>Косметичний</h5>
+              <p class="tariffs__item-subtitle">Lorem Ipsum is simply dummy</p>
+              <p>Lorem Ipsum is:</p>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+              <p class="tariffs__item-subtitle-2">Lorem Ipsum is</p>
+              <p>Lorem Ipsum is:</p>
+              <p>Lorem Ipsum is</p>
+            </div>
+            <div class="tariffs__item-price">
+              <p class="tariffs__old-price">від 3 500</p>
+              <p class="tariffs__new-price">від <span>25 000</span> грн/м<sup>2</sup></p>
+            </div>
+            <div class="tariffs__item-btn">
+              <a data-fancybox data-src="#modal" href="javascript:;" class="btn-gold modal__popup">Отримати розрахунок</a>
+            </div>
+          </div>
+
+          <div class="tariffs__item tariffs__slide">
+            <div class="tariffs__item-marker tariffs__item-marker-2"></div>
+            <div class="tariffs__item-text">
+              <h5>Капітальний</h5>
+              <p class="tariffs__item-subtitle">Lorem Ipsum is simply dummy</p>
+              <p>Lorem Ipsum is:</p>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+              <p class="tariffs__item-subtitle-2">Lorem Ipsum is</p>
+              <p>Lorem Ipsum is:</p>
+              <p>Lorem Ipsum is</p>
+            </div>
+            <div class="tariffs__item-price active-tariff">
+              <p class="tariffs__old-price">від 1 500</p>
+              <p class="tariffs__new-price">від <span>5 000</span> грн/м<sup>2</sup></p>
+            </div>
+            <div class="tariffs__item-btn">
+              <a data-fancybox data-src="#modal" href="javascript:;" class="btn-gold modal__popup">Отримати розрахунок</a>
+            </div>
+          </div>
+          
+          <div class="tariffs__item tariffs__slide">
+            <div class="tariffs__item-marker tariffs__item-marker-3"></div>
+            <div class="tariffs__item-text">
+              <h5>Дизайнерський</h5>
+              <p class="tariffs__item-subtitle">Lorem Ipsum is simply dummy</p>
+              <p>Lorem Ipsum is:</p>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+              <p class="tariffs__item-subtitle-2">Lorem Ipsum is</p>
+              <p>Lorem Ipsum is:</p>
+              <p>Lorem Ipsum is</p>
+            </div>
+            <div class="tariffs__item-price">
+              <p class="tariffs__old-price">від 3 500</p>
+              <p class="tariffs__new-price">від <span>45 000</span> грн/м<sup>2</sup></p>
+            </div>
+            <div class="tariffs__item-btn">
+              <a data-fancybox data-src="#modal" href="javascript:;" class="btn-gold modal__popup">Отримати розрахунок</a>
+            </div>
+          </div>
+
+          <div id="tariffs__btn-prev"><span></span></div>
+          <div id="tariffs__btn-next"><span></span></div>
+        </div>
+
+        <div id="secondbud" class="tariffs__inner tariffs-hide">
+          <div class="tariffs__item tariffs__slide2 tariffs__slide-active2">
+            <div class="tariffs__item-marker tariffs__item-marker-1"></div>
+            <div class="tariffs__item-text">
+              <h5>Косметичний</h5>
+              <p class="tariffs__item-subtitle">Lorem Ipsum is simply dummy</p>
+              <p>Lorem Ipsum is:</p>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+              <p class="tariffs__item-subtitle-2">Lorem Ipsum is</p>
+              <p>Lorem Ipsum is:</p>
+              <p>Lorem Ipsum is</p>
+            </div>
+            <div class="tariffs__item-price">
+              <p class="tariffs__old-price">від 10 500</p>
+              <p class="tariffs__new-price">від <span>8 000</span> грн/м<sup>2</sup></p>
+            </div>
+            <div class="tariffs__item-btn">
+              <a data-fancybox data-src="#modal" href="javascript:;" class="btn-gold modal__popup">Отримати розрахунок</a>
+            </div>
+          </div>
+
+          <div class="tariffs__item tariffs__slide2">
+            <div class="tariffs__item-marker tariffs__item-marker-2"></div>
+            <div class="tariffs__item-text">
+              <h5>Капітальний</h5>
+              <p class="tariffs__item-subtitle">Lorem Ipsum is simply dummy</p>
+              <p>Lorem Ipsum is:</p>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+              <p class="tariffs__item-subtitle-2">Lorem Ipsum is</p>
+              <p>Lorem Ipsum is:</p>
+              <p>Lorem Ipsum is</p>
+            </div>
+            <div class="tariffs__item-price active-tariff">
+              <p class="tariffs__old-price">від 11 000</p>
+              <p class="tariffs__new-price">від <span>10 000</span> грн/м<sup>2</sup></p>
+            </div>
+            <div class="tariffs__item-btn">
+              <a data-fancybox data-src="#modal" href="javascript:;" class="btn-gold modal__popup">Отримати розрахунок</a>
+            </div>
+          </div>
+          
+          <div class="tariffs__item tariffs__slide2">
+            <div class="tariffs__item-marker tariffs__item-marker-3"></div>
+            <div class="tariffs__item-text">
+              <h5>Дизайнерський</h5>
+              <p class="tariffs__item-subtitle">Lorem Ipsum is simply dummy</p>
+              <p>Lorem Ipsum is:</p>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+              <p class="tariffs__item-subtitle-2">Lorem Ipsum is</p>
+              <p>Lorem Ipsum is:</p>
+              <p>Lorem Ipsum is</p>
+            </div>
+            <div class="tariffs__item-price">
+              <p class="tariffs__old-price">від 17 500</p>
+              <p class="tariffs__new-price">від <span>15 000</span> грн/м<sup>2</sup></p>
+            </div>
+            <div class="tariffs__item-btn">
+              <a data-fancybox data-src="#modal" href="javascript:;" class="btn-gold modal__popup">Отримати розрахунок</a>
+            </div>
+          </div>
+          <div id="tariffs__btn-prev2"><span></span></div>
+          <div id="tariffs__btn-next2"><span></span></div>
+        </div>
+        
+        <div class="tariffs__dots">
+          <span class="tariffs__dot tariffs__dot2 tariffs__dot-active2 tariffs__dot-active"></span>
+          <span class="tariffs__dot tariffs__dot2"></span>
+          <span class="tariffs__dot tariffs__dot2"></span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- HOW WE WORK
+    =================================== -->
+    <section class="bg-grey">
+      <div class="container">
+        <p class="section-title hww__title">Як ми працюємо</p>
+
+        <div class="hww__wrap">
+
+          <div class="hww__item">
+            <div class="hww-item__number">
+                <p class="hww-item__marker">1</p>
+                <img src="img/icons/hww-1.png" alt="">
+            </div>
+            <p class="hww-item__subtitle">Подзвонити чи залишити заявку</p>
+            <p class="hww-item__text">Специаліст перезвоніт впродовж 5 -10 хвилин. Проконсультує, визначить строки, підскаже вартість проєкту.</p>
+            <a data-fancybox data-src="#modal" href="javascript:;" class="hww-item__btn btn-gold modal__popup">Замовити дзвінок</a>
+          </div>
+
+          <div class="hww__item">
+            <div class="hww-item__number">
+                <p class="hww-item__marker">2</p>
+                <img src="img/icons/hww-1.png" alt="">
+            </div>
+            <p class="hww-item__subtitle">Подзвонити чи залишити заявку</p>
+            <p class="hww-item__text">Специаліст перезвоніт впродовж 5 -10 хвилин. Проконсультує, визначить строки, підскаже вартість проєкту.</p>
+          </div>
+
+          <div class="hww__item">
+            <div class="hww-item__number">
+                <p class="hww-item__marker">3</p>
+                <img src="img/icons/hww-1.png" alt="">
+            </div>
+            <p class="hww-item__subtitle">Подзвонити чи залишити заявку</p>
+            <p class="hww-item__text">Специаліст перезвоніт впродовж 5 -10 хвилин. Проконсультує, визначить строки, підскаже вартість проєкту.</p>
+          </div>
+
+          <div class="hww__item">
+            <div class="hww-item__number">
+                <p class="hww-item__marker">4</p>
+                <img src="img/icons/hww-1.png" alt="">
+            </div>
+            <p class="hww-item__subtitle">Подзвонити чи залишити заявку</p>
+            <p class="hww-item__text">Специаліст перезвоніт впродовж 5 -10 хвилин. Проконсультує, визначить строки, підскаже вартість проєкту.</p>
+          </div>
+
+          <div class="hww__item">
+            <div class="hww-item__number">
+                <p class="hww-item__marker">5</p>
+                <img src="img/icons/hww-1.png" alt="">
+            </div>
+            <p class="hww-item__subtitle">Подзвонити чи залишити заявку</p>
+            <p class="hww-item__text">Специаліст перезвоніт впродовж 5 - 10 хвилин. Проконсультує, визначить строки, підскаже вартість проєкту.</p>
+          </div>
+
+          <div class="hww__item">
+            <div class="hww-item__number">
+                <p class="hww-item__marker">6</p>
+                <img src="img/icons/hww-1.png" alt="">
+            </div>
+            <p class="hww-item__subtitle">Подзвонити чи залишити заявку</p>
+            <p class="hww-item__text">Специаліст перезвоніт впродовж 5 -10 хвилин. Проконсультує, визначить строки, підскаже вартість проєкту.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFLIO
+    ============================== -->
+    <section id="section-portfolio">
+      <div class="container">
+        <p class="section-title portfolio__title">Наші роботи</p>
+
+        <div class="portfolio__wrap">
+
+          <div class="portfolio__box">
+            <p class="portfolio__squre">80 м<sup>2</sup></p>
+            <div class="portfolio__adress-wrap">
+              <span class="portfolio__adress">Буча, вул. Івана Кожедуба, 3А</span>
+              <span class="portfolio__price">100 000 грн.</span>
+            </div>
+            <aside class="services-gallery">
+                <div class="services-gallery__img--big">
+                    <img src="img/portfolio/01.jpg" alt="services-1">
+                </div>
+                <ul class="services-gallery__list">
+                    <li class="services-gallery__item">
+                        <img src="img/portfolio/01.jpg" alt="services-1">
+                    </li>
+                    <li class="services-gallery__item">
+                        <img src="img/portfolio/02.jpg" alt="services-2">
+                    </li>
+                    <li class="services-gallery__item">
+                        <img src="img/portfolio/03.jpg" alt="services-3">
+                    </li>
+                    <li class="services-gallery__item">
+                        <img src="img/portfolio/04.jpg" alt="services-4">
+                    </li>
+                    <li class="services-gallery__item">
+                        <img src="img/portfolio/06.jpg" alt="services-6">
+                    </li>
+                    <li class="services-gallery__item">
+                        <img src="img/portfolio/07.jpg" alt="services-7">
+                    </li>
+                </ul>
+            </aside>
+          </div>
+
+          <div class="portfolio__box">
+            <p class="portfolio__squre">113 м<sup>2</sup></p>
+            <div class="portfolio__adress-wrap">
+              <span class="portfolio__adress">Київ, вул. Соборна, 13</span>
+              <span class="portfolio__price">500 000 грн.</span>
+            </div>
+            <aside class="services-gallery">
+                <div class="services-gallery__img--big">
+                    <img src="img/portfolio/01.jpg" alt="services-1">
+                </div>
+                <ul class="services-gallery__list">
+                    <li class="services-gallery__item">
+                        <img src="img/portfolio/01.jpg" alt="services-1">
+                    </li>
+                    <li class="services-gallery__item">
+                        <img src="img/portfolio/02.jpg" alt="services-2">
+                    </li>
+                    <li class="services-gallery__item">
+                        <img src="img/portfolio/03.jpg" alt="services-3">
+                    </li>
+                    <li class="services-gallery__item">
+                        <img src="img/portfolio/04.jpg" alt="services-4">
+                    </li>
+                    <li class="services-gallery__item">
+                        <img src="img/portfolio/06.jpg" alt="services-6">
+                    </li>
+                    <li class="services-gallery__item">
+                        <img src="img/portfolio/07.jpg" alt="services-7">
+                    </li>
+                </ul>
+            </aside>
+          </div>
+
+
+          <a href="#" class="reviews__btn btn-gold">Побачити більше</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MATERIALS
+    ============================== -->
+    <section id="section-materials" class="parallax parallax_materials">
+      <div class="container">
+        <p class="section-title materials__title">Допоможемо з вибором та доставкою матеріалів</p>
+        <p class="materials__subtitle">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+
+        <div class="materials__wrap">
+          <div class="materials__inner materials__inner-1">
+            <div class="materials__item">
+              <div class="materials__img">
+                <img src="img/icons/materials-1.svg" alt="">
+              </div>
+              <p class="materials__title">Lorem Ipsum is simply</p>
+              <p class="materials__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+            </div>
+            <div class="materials__item">
+              <div class="materials__img">
+                <img src="img/icons/materials-1.svg" alt="">
+              </div>
+              <p class="materials__title">Lorem Ipsum is simply</p>
+              <p class="materials__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+            </div>
+            <div class="materials__item">
+              <div class="materials__img">
+                <img src="img/icons/materials-1.svg" alt="">
+              </div>
+              <p class="materials__title">Lorem Ipsum is simply</p>
+              <p class="materials__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+            </div>
+            <div class="materials__item">
+              <div class="materials__img">
+                <img src="img/icons/materials-1.svg" alt="">
+              </div>
+              <p class="materials__title">Lorem Ipsum is simply</p>
+              <p class="materials__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+            </div>
+            <div class="materials__item">
+              <div class="materials__img">
+                <img src="img/icons/materials-1.svg" alt="">
+              </div>
+              <p class="materials__title">Lorem Ipsum is simply</p>
+              <p class="materials__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+            </div>
+            <div class="materials__item">
+              <div class="materials__img">
+                <img src="img/icons/materials-1.svg" alt="">
+              </div>
+              <p class="materials__title">Lorem Ipsum is simply</p>
+              <p class="materials__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+            </div>
+          </div>
+          <div class="materials__inner materials__inner-2">
+            <div class="materials__form">
+              <p class="materials__form-title">Хотите, мы сами купим и привезем все, что нужно для ремонта?</p>
+              <form method="get">
+                <input type="text" id="mname" name="mname" placeholder="Alex">
+                <input type="tel" value="+380" required id="lname" name="lname">
+                <input type="submit" value="Відправити" class="btn-gold modal__popup materials__form-btn">
+              </form> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS
+    ============================== -->
+    <section id="section-reviews" class="bg-grey">
+      <div class="container">
+        <p class="section-title reviews__title">Відгуки клієнтів</p>
+        <div class="reviews__wrap">
+          <div class="reviews__item">
+            <iframe height="315" src="https://www.youtube.com/embed/hRI0ymx_6aw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="reviews__item">
+            <iframe height="315" src="https://www.youtube.com/embed/hRI0ymx_6aw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="reviews__item reviews__item-hidden">
+            <iframe height="315" src="https://www.youtube.com/embed/hRI0ymx_6aw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="reviews__item reviews__item-hidden">
+            <iframe height="315" src="https://www.youtube.com/embed/hRI0ymx_6aw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <a href="#" class="reviews__btn btn-gold">Побачити більше</a>
+      </div>
+    </section>
+
+    <!-- INSTALMENT
+    ============================== -->
+    <section id="section-instalment" class="parallax parallax_instalment">
+      <div class="container">
+        <p class="section-title instalment__title">Безвідсоткова розстрочка до 100 000 гривень</p>
+        <p class="instalment__subtitle">Невідчутно для сімейного бюджету</p>
+        <div class="instalment__wrap">
+
+          <div class="instalment-benefit__inner">
+            <div class="instalment-benefit__item">
+                <p class="instalment-benefit__title">0 <span>грн.</span></p>
+                <p class="instalment-benefit__text">початковий внесок</p>
+            </div>
+            <div class="instalment-benefit__item">
+                <p class="instalment-benefit__title">21 <span> міс.</span></p>
+                <p class="instalment-benefit__text">максимальний строк розстрочки</p>
+            </div>
+            <div class="instalment-benefit__item">
+                <p class="instalment-benefit__title">20 <span>хв.</span></p>
+                <p class="instalment-benefit__text">час оформлення</p>
+            </div>
+            <div class="instalment-benefit__item">
+                <p class="instalment-benefit__title">0 <span>%</span></p>
+                <p class="instalment-benefit__text">сумарна переплата</p>
+            </div>
+          </div>
+          
+          <div class="instalment__form">
+            <form method="get" class="instalment__form-inner">
+              <input type="text" id="mname" name="mname" placeholder="Alex" class="instalment__form-field">
+              <input type="tel" value="+380" required id="lname" name="lname" class="instalment__form-field">
+              <input type="submit" value="Залишити заявку" class="btn-gold instalment__form-btn">
+            </form>
+            <div class="instalment__form-content">
+              <p class="instalment-form__text"><img src="img/icons/materials-1.svg" alt="">Необхідно лише 2 документа.</p>
+              <p class="instalment-form__text"><img src="img/icons/materials-1.svg" alt="">Дистанційне погодження.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PAY
+    ============================== -->
+    <section id="section-payment">
+      <div class="container">
+        <p class="section-title payment__title">Зручність оплати</p>
+        <div class="pay__wrap">
+          <div class="pay__item">
+            <div class="pay__item-inner">
+              <div class="pay__item-img">
+                <img src="img/icons/materials-1.svg" alt="">
+              </div>
+              <p class="pay__item-title">Lorem Ipsum is simply established fact that</p>
+            </div>
+            <p class="pay__item-text">Lorem Ipsum is simply dummy lorem Ipsum is simply dummy simply dummy lorem Ipsum is simply dummy</p>
+          </div>
+          <div class="pay__item">
+            <div class="pay__item-inner">
+              <div class="pay__item-img">
+                <img src="img/icons/materials-1.svg" alt="">
+              </div>
+              <p class="pay__item-title">Lorem Ipsum is simply established fact that</p>
+            </div>
+            <p class="pay__item-text">Lorem Ipsum is simply dummy lorem Ipsum is simply dummy simply dummy lorem Ipsum is simply dummy</p>
+          </div>
+          <div class="pay__item">
+            <div class="pay__item-inner">
+              <div class="pay__item-img">
+                <img src="img/icons/materials-1.svg" alt="">
+              </div>
+              <p class="pay__item-title">Lorem Ipsum is simply established fact that</p>
+            </div>
+            <p class="pay__item-text">Lorem Ipsum is simply dummy lorem Ipsum is simply dummy simply dummy lorem Ipsum is simply dummy.</p>
+            <p>Lorem Ipsum is simply dummy lorem Ipsum is simply dumm</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- GET ESTIMENT
+    ============================== -->
+    <section id="section-getestiment">
+      <div class="container">
+        <div class="getestiment__wrap">
+          <div class="getestiment__img">
+            <img src="img/icons/worker.png" alt="">
+          </div>
+          <ul class="getestiment__box-list">
+            <li class="getestiment__box-item">Lorem Ipsum is simply established fact that</li>
+            <li class="getestiment__box-item">Lorem Ipsum is simply established fact that dummy simply dummy</li>
+            <li class="getestiment__box-item">Lorem Ipsum is simply established fact</li>
+            <li class="getestiment__box-item">Lorem Ipsum is simply dummy lorem Ipsum is simply dummy simply dummy lorem</li>
+          </ul>
+          <div class="getestiment__form">
+            <p class="getestiment__form-title">Отримайте детальний кошторис безкоштовно</p>
+            <p class="getestiment__form-subtitle">Замовте безкоштовний виїзд фахівця для консультації і розрахунку кошторису.</p>
+            <form method="get">
+              <input type="tel" value="+380" required id="lname" name="lname">
+              <input type="submit" value="Замовити консультацію" class="btn-gold getestiment__form-btn">
+            </form> 
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUALITY
+    ============================== -->
+    <section id="section-payment">
+      <div class="container">
+        <p class="section-title payment__title">Гарантія якості</p>
+        <div class="pay__wrap">
+          <div class="pay__item">
+            <div class="pay__item-inner">
+              <div class="pay__item-img">
+                <img src="img/icons/materials-1.svg" alt="">
+              </div>
+              <p class="pay__item-title">Lorem Ipsum is simply established fact that</p>
+            </div>
+            <p class="pay__item-text">Lorem Ipsum is simply dummy lorem Ipsum is simply dummy simply dummy lorem Ipsum is simply dummy. Lorem Ipsum is simply dummy lorem Ipsum is simply dummy simply dummy lore</p>
+          </div>
+          <div class="pay__item">
+            <div class="pay__item-inner">
+              <div class="pay__item-img">
+                <img src="img/icons/materials-1.svg" alt="">
+              </div>
+              <p class="pay__item-title">Lorem Ipsum is simply established fact that</p>
+            </div>
+            <p class="pay__item-text">Lorem Ipsum is simply dummy lorem Ipsum is simply dummy simply dummy lorem Ipsum is simply dummy. Lorem Ipsum is simply dummy lorem Ipsum is simply dummy simply dummy lorem Ipsum is simply dummy</p>
+          </div>
+          <div class="pay__item">
+            <div class="pay__item-inner">
+              <div class="pay__item-img">
+                <img src="img/icons/materials-1.svg" alt="">
+              </div>
+              <p class="pay__item-title">Lorem Ipsum is simply established fact that</p>
+            </div>
+            <p class="pay__item-text">Lorem Ipsum is simply dummy lorem Ipsum is simply dummy simply dummy lorem Ipsum is simply dummy.</p>
+            <p>Lorem Ipsum is simply dummy lorem Ipsum is simply dumm</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES
+    ============================== -->
+    <section id="section-services">
+      <div class="container">
+        <p class="section-title services__title">Послуги</p>
+        <div class="services__wrap">
+          <table cellspacing="0" class="services__table">
+            <tbody>
+              <tr>
+                <th colspan="2">Ремонт квартир</th>
+              </tr>
+              <tr>
+                <td><a href="#">Lorem Ipsum is simply established</a></td>
+                <td>від 2 920 грн / м<sup>2</sup></td>
+              </tr>
+              <tr>
+                <td><a href="#">Lorem Ipsum is simply established</a></td>
+                <td>від 2 920 грн / м<sup>2</sup></td>
+              </tr>
+              <tr>
+                <td><a href="#">Lorem Ipsum is simply established</a></td>
+                <td>від 2 920 грн / м<sup>2</sup></td>
+              </tr>
+              <tr>
+                <td><a href="#">Lorem Ipsum is simply established</a></td>
+                <td>від 2 920 грн / м<sup>2</sup></td>
+              </tr>
+              <tr>
+                <td><a href="#">Lorem Ipsum is simply established</a></td>
+                <td>від 2 920 грн / м<sup>2</sup></td>
+              </tr>
+              <tr>
+                <td><a href="#">Lorem Ipsum is simply established</a></td>
+                <td>від 2 920 грн / м<sup>2</sup></td>
+              </tr>
+              <tr>
+                <td><a href="#">Lorem Ipsum is simply established</a></td>
+                <td>від 2 920 грн / м<sup>2</sup></td>
+              </tr>
+              <tr>
+                <td><a href="#">Lorem Ipsum is simply established</a></td>
+                <td>від 2 920 грн / м<sup>2</sup></td>
+              </tr>
+              <tr>
+                <td><a href="#">Lorem Ipsum is simply established</a></td>
+                <td>від 2 920 грн / м<sup>2</sup></td>
+              </tr>
+              <tr>
+                <td><a href="#">Lorem Ipsum is simply established</a></td>
+                <td>від 2 920 грн / м<sup>2</sup></td>
+              </tr>
+              <tr>
+                <td><a href="#">Lorem Ipsum is simply established</a></td>
+                <td>від 2 920 грн / м<sup>2</sup></td>
+              </tr>
+              <tr>
+                <td><a href="#">Lorem Ipsum is simply established</a></td>
+                <td>від 2 920 грн / м<sup>2</sup></td>
+              </tr>
+              <tr>
+                <td><a href="#">Lorem Ipsum is simply established</a></td>
+                <td>від 2 920 грн / м<sup>2</sup></td>
+              </tr>
+              <tr>
+                <td><a href="#">Lorem Ipsum is simply established</a></td>
+                <td>від 2 920 грн / м<sup>2</sup></td>
+              </tr>
+              <tr>
+                <td><a href="#">Lorem Ipsum is simply established</a></td>
+                <td>від 2 920 грн / м<sup>2</sup></td>
+              </tr>
+            </tbody>
+          </table>
+          <table cellspacing="0" class="services__table">
+            <tbody>
+              <tr>
+                <th colspan="2">Ремонт квартир</th>
+              </tr>
+              <tr>
+                <td><a href="#">Lorem Ipsum is simply established</a></td>
+                <td>від 2 920 грн / м<sup>2</sup></td>
+              </tr>
+              <tr>
+                <td><a href="#">Lorem Ipsum is simply established</a></td>
+                <td>від 2 920 грн / м<sup>2</sup></td>
+              </tr>
+              <tr>
+                <td><a href="#">Lorem Ipsum is simply established</a></td>
+                <td>від 2 920 грн / м<sup>2</sup></td>
+              </tr>
+              <tr>
+                <td><a href="#">Lorem Ipsum is simply established</a></td>
+                <td>від 2 920 грн / м<sup>2</sup></td>
+              </tr>
+              <tr>
+                <td><a href="#">Lorem Ipsum is simply established</a></td>
+                <td>від 2 920 грн / м<sup>2</sup></td>
+              </tr>
+              <tr>
+                <td><a href="#">Lorem Ipsum is simply established</a></td>
+                <td>від 2 920 грн / м<sup>2</sup></td>
+              </tr>
+              <tr>
+                <td><a href="#">Lorem Ipsum is simply established</a></td>
+                <td>від 2 920 грн / м<sup>2</sup></td>
+              </tr>
+              <tr>
+                <td><a href="#">Lorem Ipsum is simply established</a></td>
+                <td>від 2 920 грн / м<sup>2</sup></td>
+              </tr>
+              <tr>
+                <td><a href="#">Lorem Ipsum is simply established</a></td>
+                <td>від 2 920 грн / м<sup>2</sup></td>
+              </tr>
+              <tr>
+                <td><a href="#">Lorem Ipsum is simply established</a></td>
+                <td>від 2 920 грн / м<sup>2</sup></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM
+    ============================== -->
+    <section id="section-team">
+      <div class="container">
+        <p class="section-title team__title">Наша команда</p>
+        <ul id="team__positions" class="team__positions">
+          <li class="team__positions-item positions-active" data-tab="1">Дизайнер1</li>
+          <li class="team__positions-item" data-tab="2">Дизайнер2</li>
+          <li class="team__positions-item" data-tab="3">Дизайнер3</li>
+          <li class="team__positions-item" data-tab="4">Дизайнер4</li>
+          <li class="team__positions-item" data-tab="5">Дизайнер5</li>
+        </ul>
+        <div class="team__wrap">
+
+          <div class="team__worker worker-active" data-content="1">
+            <div class="worker__img">
+              <img src="img/icons/designer.jpg" alt="">
+            </div>
+            <div class="worker__text">
+              <p class="worker__text-name">Дизайнер1</p>
+              <p class="worker__text-position">Дизайнер1</p>
+              <p class="worker__text-describe">Дизайнер1 There are manyssing hidden in the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+            </div>
+          </div>
+
+          <div class="team__worker" data-content="2">
+            <div class="worker__img">
+              <img src="img/icons/designer.jpg" alt="">
+            </div>
+            <div class="worker__text">
+              <p class="worker__text-name">Дизайнер2</p>
+              <p class="worker__text-position">Дизайнер2</p>
+              <p class="worker__text-describe">Дизайнер2 There are manyssing hidden in the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+            </div>
+          </div>
+
+          <div class="team__worker" data-content="3">
+            <div class="worker__img">
+              <img src="img/icons/designer.jpg" alt="">
+            </div>
+            <div class="worker__text">
+              <p class="worker__text-name">Дизайнер3</p>
+              <p class="worker__text-position">Дизайнер3</p>
+              <p class="worker__text-describe">Дизайнер3 There are manyssing hidden in the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+            </div>
+          </div>
+
+          <div class="team__worker" data-content="4">
+            <div class="worker__img">
+              <img src="img/icons/designer.jpg" alt="">
+            </div>
+            <div class="worker__text">
+              <p class="worker__text-name">Дизайнер4</p>
+              <p class="worker__text-position">Дизайнер4</p>
+              <p class="worker__text-describe">Дизайнер4 There are manyssing hidden in the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+            </div>
+          </div>
+
+          <div class="team__worker" data-content="5">
+            <div class="worker__img">
+              <img src="img/icons/designer.jpg" alt="">
+            </div>
+            <div class="worker__text">
+              <p class="worker__text-name">Дизайнер5</p>
+              <p class="worker__text-position">Дизайнер5</p>
+              <p class="worker__text-describe">Дизайнер5 There are manyssing hidden in the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- LETTER TO BOSS
+    ============================== -->
+    <section id="section-letterboss">
+      <div class="container">
+        <div class="letterboss__wrap">
+          <div class="letterboss__img">
+            <img src="img/icons/face.png" alt="">
+          </div>
+          <div class="letterboss__form">
+            <p class="letterboss__form-title">Лист директору</p>
+            <p class="letterboss__form-subtitle">Ми завжди відкриті до зауважень і критики. <b>Пишіть, відповімо сьогодні!</b></p>
+            <form method="get">
+              <input type="text" id="mname" name="mname" placeholder="Alex" class="letterboss__form-name">
+              <input type="tel" value="+380" required id="lname" name="lname" class="letterboss__form-tel">
+              <textarea name="ltext" id="" cols="30" rows="7" class="letterboss__textarea"></textarea>
+              <span class="letterboss__form-span">Я даю свою згоду на обробку персональних даних.</span>
+              <input type="submit" value="Відправити" class="btn-gold letterboss__form-btn">
+            </form> 
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUESTIONS
+    ============================== -->
+    <section class="bg-grey">
+      <div class="container">
+        <p class="section-title questions__title">Питання і відповіді</p>
+        <div class="questions__wrap">
+          <div class="questions__list">
+            <p class="question">Lorem Ipsum is simply established</p>
+            <div class="answer">
+              <p class="answer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p class="answer__autor">Autor Ipsum</p>
+              <p class="answer__position">Position consectetur adipisicing</p>
+            </div>
+            <p class="question">Lorem Ipsum is simply established</p>
+            <div class="answer">
+              <p class="answer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p class="answer__autor">Autor Ipsum</p>
+              <p class="answer__position">Position consectetur adipisicing</p>
+            </div>
+            <p class="question">Lorem Ipsum is simply established consectetur adipisicing elit consectetur adipisicing elit</p>
+            <div class="answer">
+              <p class="answer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p class="answer__autor">Autor Ipsum</p>
+              <p class="answer__position">Position consectetur adipisicing</p>
+            </div>
+            <p class="question">Lorem Ipsum is simply established</p>
+            <div class="answer">
+              <p class="answer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p class="answer__autor">Autor Ipsum</p>
+              <p class="answer__position">Position consectetur adipisicing</p>
+            </div>
+            <p class="question">Lorem Ipsum is simply established</p>
+            <div class="answer">
+              <p class="answer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p class="answer__autor">Autor Ipsum</p>
+              <p class="answer__position">Position consectetur adipisicing</p>
+            </div>
+          </div>
+          <div class="questions__list">
+            <p class="question">Lorem Ipsum is simply established</p>
+            <div class="answer">
+              <p class="answer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p class="answer__autor">Autor Ipsum</p>
+              <p class="answer__position">Position consectetur adipisicing</p>
+            </div>
+            <p class="question">Lorem Ipsum is simply established</p>
+            <div class="answer">
+              <p class="answer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p class="answer__autor">Autor Ipsum</p>
+              <p class="answer__position">Position consectetur adipisicing</p>
+            </div>
+            <p class="question">Lorem Ipsum is simply established consectetur adipisicing elit</p>
+            <div class="answer">
+              <p class="answer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p class="answer__autor">Autor Ipsum</p>
+              <p class="answer__position">Position consectetur adipisicing</p>
+            </div>
+            <p class="question">Lorem Ipsum is simply established</p>
+            <div class="answer">
+              <p class="answer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p class="answer__autor">Autor Ipsum</p>
+              <p class="answer__position">Position consectetur adipisicing</p>
+            </div>
+            <p class="question">Lorem Ipsum is simply established</p>
+            <div class="answer">
+              <p class="answer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p class="answer__autor">Autor Ipsum</p>
+              <p class="answer__position">Position consectetur adipisicing</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ASIDE BOTTOM
+    ============================== -->
+    <section id="section-aside">
+      <div class="container">
+        <div class="aside__wrap">
+          <div class="aside__list">
+            <p class="aside__title">Ремонт в компанії Ideal HOUSE</p>
+            <p class="aside__text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32</p>
+            <p class="aside__text">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+            <table cellspacing="0" class="aside__table">
+              <tbody>
+                <tr>
+                  <th colspan="2">Ремонт квартир</th>
+                </tr>
+                <tr>
+                  <td>Lorem Ipsum is simply established</td>
+                  <td>від 2 920 грн / м<sup>2</sup></td>
+                </tr>
+                <tr>
+                  <td>Lorem Ipsum is simply established</td>
+                  <td>від 2 920 грн / м<sup>2</sup></td>
+                </tr>
+                <tr>
+                  <td>Lorem Ipsum is simply established</td>
+                  <td>від 2 920 грн / м<sup>2</sup></td>
+                </tr>
+                <tr>
+                  <td>Lorem Ipsum is simply established</td>
+                  <td>від 2 920 грн / м<sup>2</sup></td>
+                </tr>
+                <tr>
+                  <td>Lorem Ipsum is simply established</td>
+                  <td>від 2 920 грн / м<sup>2</sup></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="aside__list">
+            <p class="aside__title">Ціна робіт</p>
+            <p class="aside__text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32</p>
+            <p class="aside__text">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+            <p class="aside__title">Послідовність робіт</p>
+            <p class="aside__text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32</p>
+            <p class="aside__text">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    
+
+    <!-- FOOTER
+    ============================== -->
+    <footer>
+      <div id="footer">
+        <div class="footer-column footer-column-1">
+          <a id="footer-logo" rel="nofollow" href="/">
+            <img id="logo_big" src="img/icons/logo.svg" alt="logo">
+          </a>
+          <a href="#" class="footer-calculate">Калькулятор ремонту</a>
+        </div>
+        <div class="footer-menu">
+          <div class="footer-menu-list">
+            <p class="footer-column__title">Про IdealHouse</p>
+            <ul class="footer__menu">
+              <li class="footer__menu-item">
+                <a href="#" rel="nofollow" class="footer__menu-link">СМІ про нас</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" rel="nofollow" class="footer__menu-link">Вакансії</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" rel="nofollow" class="footer__menu-link">Відгуки</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" rel="nofollow" class="footer__menu-link">Команда</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-menu-list">
+            <p class="footer-column__title">Послуги</p>
+            <ul class="footer__menu">
+              <li class="footer__menu-item">
+                <a href="#" rel="nofollow" class="footer__menu-link">Ремонт квартир</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" rel="nofollow" class="footer__menu-link">Ремонт будинків</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" rel="nofollow" class="footer__menu-link">Ремонт кімнат</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" rel="nofollow" class="footer__menu-link">Ремонт офісів</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-column footer-column-4">
+          <p class="footer-column__title footer-column__title-social">Слідкуйте за нашими новинами та акціями:</p>
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a href="https://www.facebook.com/idealhouse.bucha/?view_public_for=110336943678205" rel="noopener" title="facebook" target="_blank">
+                <svg width="45" height="45" fill="#e1c32f">
+                  <use href="#facebook"/>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="https://www.instagram.com/ideal_house_design/?hl=uk" rel="noopener" title="instagram" target="_blank">
+                <svg width="45" height="45" fill="#e1c32f">
+                  <use href="#instagram"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2021 | Салон дизайну та ремонту Ideal House</p>
+      </div>
+    </footer>
+
+    <svg style="display: none;">
+      <symbol id="facebook" viewBox="0 0 512 512">
+        <path d="M316.75,216.812h-44.531v-32.5c0-9.969,10.312-12.281,15.125-12.281c4.781,0,28.767,0,28.767,0v-43.859L283.141,128   c-44.983,0-55.25,32.703-55.25,53.672v35.141H195.25V262h32.641c0,58.016,0,122,0,122h44.328c0,0,0-64.641,0-122h37.656   L316.75,216.812z"/>
+      </symbol>
+      <symbol id="instagram" viewBox="0 0 480 480">
+        <path d="m344 96h-208c-22.082031.027344-39.972656 17.917969-40 40v208c.027344 22.082031 17.917969 39.972656 40 40h208c22.082031-.027344 39.972656-17.917969 40-40v-208c-.027344-22.082031-17.917969-39.972656-40-40zm24 248c0 13.253906-10.746094 24-24 24h-208c-13.253906 0-24-10.746094-24-24v-208c0-13.253906 10.746094-24 24-24h208c13.253906 0 24 10.746094 24 24zm0 0"/>
+        <path d="m240 160c-44.183594 0-80 35.816406-80 80s35.816406 80 80 80 80-35.816406 80-80c-.046875-44.164062-35.835938-79.953125-80-80zm0 144c-35.347656 0-64-28.652344-64-64s28.652344-64 64-64 64 28.652344 64 64c-.039062 35.328125-28.671875 63.960938-64 64zm0 0"/>
+        <path d="m328 128c-13.253906 0-24 10.746094-24 24s10.746094 24 24 24 24-10.746094 24-24-10.746094-24-24-24zm0 32c-4.417969 0-8-3.582031-8-8s3.582031-8 8-8 8 3.582031 8 8-3.582031 8-8 8zm0 0"/>
+      </symbol>
+      <symbol id="search" viewBox="0 0 512 512">
+        <g>
+          <g>
+            <path d="M338.752,99.482c-65.965-65.974-173.306-65.974-239.277,0c-65.967,65.964-65.967,173.305,0,239.269    c63.708,63.712,165.99,65.879,232.342,6.544l13.413,13.413c-3.34,8.56-1.59,18.623,5.311,25.528l70.782,70.782    c9.305,9.31,24.397,9.305,33.696,0c9.31-9.299,9.31-24.387,0-33.696l-70.777-70.772c-6.905-6.899-16.988-8.65-25.533-5.311    l-13.413-13.423C404.636,265.465,402.463,163.188,338.752,99.482z M119.698,318.539c-54.819-54.819-54.819-144.015,0-198.834    c54.819-54.83,144.017-54.819,198.836,0s54.819,144.02,0,198.839S174.517,373.358,119.698,318.539z"/>
+            <path d="M153.1,151.877c23.944-23.95,51.774-41.331,81.037-52.169c-33.153-1.886-68.66,11.014-95.909,38.253    c-27.624,27.626-40.488,63.746-38.142,97.302C110.841,205.137,128.511,176.46,153.1,151.877z"/>
+          </g>
+        </g>
+      </symbol>
+      <symbol id="icon_phone" x="0px" y="0px" viewBox="0 0 59.997 59.997" style="enable-background:new 0 0 59.997 59.997;" xml:space="preserve">
+        <g>
+          <path d="M44.071,38.386c-0.895-0.51-1.83-0.779-2.704-0.779c-1.301,0-2.367,0.596-3.012,1.68c-1.021,1.221-2.287,2.646-2.592,2.867
+            c-2.378,1.61-4.237,1.429-6.295-0.629L17.982,30.038c-2.045-2.045-2.233-3.928-0.631-6.292c0.224-0.31,1.649-1.575,2.869-2.595
+            c0.778-0.464,1.312-1.151,1.546-1.996c0.311-1.123,0.081-2.444-0.653-3.731c-0.173-0.296-4.289-7.27-8.085-9.277
+            c-0.709-0.375-1.506-0.573-2.307-0.573c-1.318,0-2.558,0.514-3.489,1.445L4.695,9.556c-7.401,7.402-6.031,16.596,3.962,26.588
+            L23.362,50.85c5.745,5.746,11.224,8.659,16.281,8.659c0.001,0,0.001,0,0.001,0c3.721,0,7.188-1.581,10.306-4.698l2.537-2.537
+            c1.541-1.541,1.892-3.87,0.872-5.796C51.351,42.683,44.378,38.565,44.071,38.386z"/>
+        </g>
+      </symbol>
+      <symbol id="calcul-icon-1" viewBox="0 0 255.12 283.46"><path class="cls-1" d="M130.33,94.9,138.27,91l5.65,6.82,8.85-.37,2.38,8.53,8.24,3.27L162.1,118l6.2,6.33-4.75,7.48,3.09,8.31-7.38,4.9-.56,8.84L150,155.32l-4.11,7.85-8.58-2.2-6.95,5.5-6.94-5.5-8.58,2.2-4.11-7.85L102,153.84l-.56-8.84L94,140.1l3.09-8.31-4.75-7.48,6.2-6.33-1.29-8.76,8.23-3.27,2.39-8.53,8.85.37L122.4,91Zm22.18,160.91,27.42,7L193,237.77l27.9-4.73,1.79-28.24,23.56-15.66-9.85-26.53,15.15-23.9L231.8,118.49l4.13-28L209.62,80.07,202,52.82,173.73,54l-18-21.79L130.33,44.77,105,32.2,86.94,54,58.67,52.82,51.05,80.07,24.74,90.49l4.13,28L9.08,138.71l15.15,23.9-9.86,26.53L37.94,204.8,39.72,233l27.91,4.73,13.11,25.07,27.41-7,22.18,17.58Zm-67.1-3.46L73.53,229.64l-25.27-4.28-1.62-25.58L25.29,185.59l8.93-24L20.49,139.91l17.93-18.32L34.69,96.23l23.83-9.44,6.89-24.68L91,63.17l16.34-19.74,23,11.39,23-11.39,16.34,19.74,25.61-1.06,6.9,24.68L226,96.23l-3.74,25.36,17.93,18.32-13.73,21.65,8.93,24L214,199.78l-1.62,25.58-25.27,4.28-11.88,22.71L150.43,246l-20.1,15.91L110.24,246Zm88-85.48-10.6,1.79,13.67,50.86-19.66-8-14.28,16.59-10.15-43.69-.57.45-10.74,46.24L106.8,214.52l-19.66,8,14-52.18-.64-1.22-13.26-2.25-.85-13.43L75.21,146l4.68-12.61L72.69,122l9.41-9.61-2-13.31,12.51-4.95,3.62-13,13.44.56,8.58-10.37,12.05,6,12.06-6L151,81.75l13.44-.56,3.63,13,12.5,4.95-2,13.31L188,122l-7.2,11.37L185.46,146l-11.2,7.44Zm-62.66,15.64-3.07-1.71-7.82,29.1,3.3.88Zm10.58,3.38L118,185l-7.44,27.58,3.3.88ZM153,209.59l-6.94-25.54-3.32.8,7.14,26.26Zm3.53-29.53-2.64,1-.68-.18,7.23,26.92,3.3-.88Zm10.18-30.85L176,143l-3.88-10.45,6-9.42-7.8-8,1.63-11-10.37-4.11-3-10.73-11.13.46-7.11-8.58-10,5-10-5-7.11,8.58-11.14-.46-3,10.73-10.36,4.11,1.63,11-7.8,8,6,9.42L84.66,143l9.28,6.17.7,11.12,11,1.86,5.17,9.88,10.8-2.77,8.73,6.92,8.74-6.92,10.8,2.77,5.17-9.88,11-1.86Z"/>
+      </symbol>
+      <symbol id="calcul-icon-2" viewBox="0 0 255.12 283.46"><path class="cls-1" d="M138.78,47.51,127,73.13a2,2,0,0,1-2.6,1L36.28,33.51a1.83,1.83,0,0,1-.9-2.43L39.55,22c-1.44-.95-3.28-2.05-4-1.93-1.21.22-11.2,16.45-10.12,17.71s40.81,39,40.78,43c.47,2.84-5.33,10.82-5.25,12s5.28,4.11,5.25,4.63-3.66,4.26-4.34,4.26-3.28-3.38-8.24-6.2-9.52-2.52-10.2-3.76.6-4.79,1.23-5.58,6.07,3.3,7.68,2.76,4.85-4.91,3.76-6.62-38.68-40-40.41-42.47,14-29.29,16.16-30.25c1.5-.67,7.48,3.06,11,5.37l.55-1.18,4.27-9.28a1.48,1.48,0,0,1,2-.73l88,40.51A2.48,2.48,0,0,1,138.78,47.51ZM15.58,168.31c3.54,2.37,12.63,5.49,14.6,4.49,3.92-2,7.29-8.92,3-9.61-3.46-.56-13-2-18.67-5.2C14.35,157.89,12.08,166,15.58,168.31Zm-3.38-28c1.85,7.24,11.56,11.56,14.07,12.32,7.55,2.27,26.27,1.11,34.54-11.91,4.68-7.35,6.31-16.44,1.35-25.65-6-11.23-19.45-15.53-30-13.42C27.11,102.66,10.85,135,12.2,140.31ZM173.33,86.06a44.6,44.6,0,1,0,44.6,44.6A44.6,44.6,0,0,0,173.33,86.06ZM59,158.72c-8.49,5.77-19.81,2.22-18.19,6.77,1.82,5.11,5.67,13.8,23.1,29.89,14,12.93,31.75,21.69,35.1,23,4.61,1.84-11.56,36.25-13.13,57.72-.37,5.06,9.87,6.11,13.13,3.54,2.64-2.07,3.16-26.35,12.08-55.45,8.1-26.42,8.87-29.44,15.58-41.07,4.58-7.93-9-1.79-28.77-15.71-26.38-18.56-18.34-29.51-25-26.61C67.89,143,68.72,152.12,59,158.72Zm125.31,29.62c-2.24-1.12-40.25-7.6-44.16-5.59s-17.33,32-12.59,36.33,49.7,10.06,52.83,6.26S186.57,189.46,184.34,188.34Zm7.6,46.78c-3.4,19.2-10.47,32.27-10.4,42.43,0,3.86,9.56,4.88,11.4,3.47,2-1.55,3.7-24.09,5.54-26.11s5,.15,6.2,2.51c.8,1.55-3,17.31-1.84,21.8.84,3.19,19.92,1.8,32.19,1.8,1.51,0,7.88-27.62,6-46.74-1.11-11.13-3.28-15.88-10.35-25.31-6.34-8.47-33.16-23.8-33.37-17.95C196.63,210,194.55,220.38,191.94,235.12Z"/>
+      </symbol>
+      <symbol id="calcul-icon-3" viewBox="0 0 255.12 283.46"><path class="cls-1" d="M189.22,87.16c15.1-7,29.14-13.44,43.219.86A39.64,39.64,0,0,1,238,65.37c5.18-1.47,7.54-3.93,12.15,4.61,4.74,8.81-.47,8.77-4.82,12.1-13.69,10.46-27.07,21.34-40.52,32.11-1.3,1-2.28,2.48-4.36,4.8,10.55,10.35,21.3,20.32,31.27,31,3.09,3.31,9.71,8.42,7.32,11.18-3.92,4.52-11.89,12.86-17.07,16.42-1.66,1.14-3.66-2.72-6.18-5.42-2.17-2.35-5-4.19-7-6.92l-3,1.79V181c0,16.44.09,32.89-.1,49.33-.2,17.19-.2,17.19-16.89,17.07q-68.05.23-136.1,0c-17.46.12-17.46.12-17.55-18.17-.1-17.86,0-35.73,0-53.59V166c-2.62,1.91-4,2.73-5.12,3.76-14.5,12.9-16.38,7-28-10.76-1.88-2.86,7.3-10.27,10.08-13.09C41.35,116.23,67.56,91.36,97,61.88c3.81-3.81,7.53-7.71,11.45-11.41s7.53-10,11.61-10,8.63,6.27,12.46,10c9.38,9.26,18.38,18.91,29.1,30,.44-5,.44-22.79.44-22.79s2.37-3.46,14.71-1.54c8.29,1.29,12.38.79,12.38.79S189.22,80.76,189.22,87.16Zm-68.89,136c29.55-55.15,51.5-92.75,121-148.75-18.19,0-43.24,14.41-69.5,39.25-18.11,17.13-38.77,42.09-50.12,59-12.28-14.54-28.29-32.94-40.63-47.54-8.31,8.71-15.34,16.12-22.5,23.62C82.84,165.34,105.07,195.91,120.33,223.19Z"/>
+      </symbol>
+      <symbol id="calcul-icon-4" viewBox="0 0 255.12 283.46"><path class="cls-1" d="M160.52,168.17c4.8-4.07,10.48-6,9.12-10.91a47.55,47.55,0,0,0-7.94-16.14,50.53,50.53,0,0,0-14.28-12.55,80.07,80.07,0,0,0-21.5-8.62l-6.1-1.64q-2.88-.75-5.45-1.52c-1.71-.51-3.4-1-5.05-1.42s-3.35-.87-5.06-1.31v-62a48.31,48.31,0,0,1,12.68,6.65,177.75,177.75,0,0,1,14,10.91q7,6,13.07,11.9t9.47,9.6H159l6.74-44.95q-3.69-2.4-9.71-6a129.73,129.73,0,0,0-13.87-7.1A122.6,122.6,0,0,0,124.64,27a83.89,83.89,0,0,0-20.38-2.84v-15H88.38V25.25A95.67,95.67,0,0,0,61,32.89,76.32,76.32,0,0,0,39.6,47.18,63.31,63.31,0,0,0,25.56,67a59.11,59.11,0,0,0-5,24.54A67,67,0,0,0,23.32,111a61.2,61.2,0,0,0,8.18,17.24,61.81,61.81,0,0,0,13.24,14,66.2,66.2,0,0,0,18,9.82q5.61,2,12,3.92t13.64,3.93v67.21a30,30,0,0,1-9.55-2.4,94.76,94.76,0,0,1-11.31-5.57,128.31,128.31,0,0,1-11.95-7.74q-6-4.37-11.48-8.73t-9.94-8.4a93.23,93.23,0,0,1-7.22-7.09H21.31l-6.74,45q5,3.49,11.55,7.42A102.66,102.66,0,0,0,41,246.73a116.3,116.3,0,0,0,18.37,5.45,103.79,103.79,0,0,0,22,2.18h3.53a30,30,0,0,0,3.53-.21v23.12h15.88V251.53a123.63,123.63,0,0,0,26.15-9.82c5.05-2.59,8-4.2,11.11-6.18a8.21,8.21,0,0,0,3.13-4.27,53.56,53.56,0,0,1,15.87-63.09ZM88.38,109.91a46.07,46.07,0,0,1-10.19-4,29.06,29.06,0,0,1-7.86-6.22,26.55,26.55,0,0,1-5.14-9,37.53,37.53,0,0,1-1.84-12.44q0-11.56,6.74-17.56t18.29-8Zm39.55,94.16a28.17,28.17,0,0,1-4.09,9.38,26.18,26.18,0,0,1-7.63,7.31,32.61,32.61,0,0,1-11.95,4.37V164a65.72,65.72,0,0,1,10.35,4,27.66,27.66,0,0,1,7.78,5.68,23.76,23.76,0,0,1,5,8.07,32.16,32.16,0,0,1,1.76,11.24A48.28,48.28,0,0,1,127.93,204.07Zm42.13,2.61c6.08.52,9.19,5.28,12.42,9.19,5.67,6.88,9.69,5.83,14.6-.87,5.92-8.09,12.57-15.65,19.07-23.3,2.75-3.25,6.12-6.91,10.66-3.53,4.38,3.27,2.74,7.54-.16,11.11q-15,18.43-30.2,36.71c-3.1,3.71-7.18,4.89-11,1.17-6.42-6.27-12.87-12.57-18.64-19.43C163,213.25,164.11,208.92,170.06,206.68Zm28.05-39.17a44.57,44.57,0,1,0,44.57,44.57,44.62,44.62,0,0,0-44.57-44.57m0-9a53.57,53.57,0,1,1-53.57,53.57,53.57,53.57,0,0,1,53.57-53.57Z"/>
+      </symbol>
+      <symbol id="calcul-icon-5" viewBox="0 0 255.12 283.46"><path class="cls-1" d="M32,139.73l-10.57,4.84-14-20.2c10.41-7.56,20.17-15.18,30.5-21.94,5.58-3.67,8-7.39,7.07-14.35-1-7.51-.23-15.26-.23-22.7C56.41,62.71,74.1,60.39,75,62c2.24,4.11,1.94,6.73,3.62,11.09,9.12-6.41,18.23-12.42,26.87-19,6.91-5.29,7-5.46,13.56-.34,9.22,7.22,19,13.75,28.87,20.82L127.56,84.67c-12.39-14-15.31-7.3-29.18,3.72-17.53,13.92-33.11,25.35-51.3,38.39-2.48,1.78-5.42,5.09-5.46,7.74-.42,24.93-.25,49.86-.25,76.12,20.85,0,40.63,0,60.41.07a22,22,0,0,1,8.31,1.65c.78.33,1.2,3.94.4,4.91a7.87,7.87,0,0,1-5.44,2.46q-35.88.24-71.75.08c-6.64,0-7.25-3.52-4.36-8.6,1-1.82,2.86-3.65,2.88-5.49C32,184.17,32,162.61,32,139.73ZM170.85,178c.61-8,2.68-15.83,3.27-23.81.16-2.14-2.45-6.17-4.31-6.5-10.18-1.84-20.56-4.08-30.81-3.79-21,.59-29.32,11.87-25.65,32.63.57,3.23,1.39,6.42,2.15,9.62,5.82,24.76,24.68,42.25,48.52,44.89,6.5.72,14.3-2.21,16-10.45,1.74-8.51-4.32-8.7-12.15-9.87-11.73-1.75-19.94-9-25.49-19.07-1.22-2.21-.11-5.71-.07-8.61,2.42,1.59,6.13,2.65,7,4.85,3.76,9.13,10.62,13.4,21.38,15.72C170.71,194,170.24,185.94,170.85,178Zm38.11,9.6c1-1.93,4.47-1,8.17-3.32-3,15.94-5.44,19.42-26.85,28.74a4.49,4.49,0,0,0-2.55,3.06c-.5,2.07-1.44,4.36-1.44,6.25v8.26c29,3.49,54.38-21,55.52-56-16.88-.85-24.85-8.23-24-25.23-6.65-.46-12.12-1.11-17.57-1.11-12.07,0-21,4.84-22,19.86-.84,12.68,2.08,26.4,2.08,39.31C195.37,207.64,202.59,199.52,209,187.55Zm-84.72-78.44c.19,14,12.44,26.82,25.58,26.8,12.39,0,24.64-12.23,25-24.9.36-13.79-10.95-25.38-25-25.58C136.18,85.24,124.07,96.45,124.24,109.11Zm82.2,32.28c13.44.13,25.59-10.82,25.93-23.37.35-12.91-10.45-23.84-23.72-24-13.86-.17-23,9.19-23.12,23.68C185.42,131,194.49,141.28,206.44,141.39ZM65.85,169.45l30.55-2.08a2.12,2.12,0,0,0,2-2.11V135.67a2.12,2.12,0,0,0-2.12-2.11H65.7a2.12,2.12,0,0,0-2.12,2.11v31.67A2.11,2.11,0,0,0,65.85,169.45Zm176.58-6.06c-.21-4.84-2-10.36-5.88-13.71-2.73-2.35-8.15-2.3-10.55.38-2.26,2.52-2.86,3-3.33,5.83-1.38,8.23,5.54,14.61,16.83,16.24C241.83,169,242.6,167.39,242.43,163.39Zm-119.8,67.3h22.54c-7.19-6.08-16.5-13.57-22.54-20.3Zm92.87-3.83H235V207.39C230.83,214.39,222.87,220.53,215.5,226.86Z"/>
+      </symbol>
+      <symbol id="materials-icon-1" viewBox="0 0 255.12 283.46"><path class="cls-1" d="M194.1,37.94v212h-11v-201H65.1v201h-11v-212Zm-41-22.34V274.94l-88-25V40.44ZM142,142.81c0-6-2.32-10.87-5.18-10.87s-5.19,4.86-5.19,10.87,2.32,10.88,5.19,10.88S142,148.82,142,142.81Z"/>
+      </symbol>
+      <symbol id="materials-icon-2" viewBox="0 0 255.12 283.46"><path class="cls-1" d="M223.39,262.07H29.31c-.21-2.93-.57-5.67-.57-8.42,0-60.11-.15-120.23.25-180.34a22.1,22.1,0,0,1,5.92-14.07C82.72,11.43,169,11.55,217.36,59c4.49,4.39,6.22,8.91,6.14,15.16q-.75,57.3-.81,114.61c0,21,.46,41.91.7,62.87C223.43,255,223.39,258.31,223.39,262.07Zm-77.57-93.68V118.15H106.37v50.24Zm.45-59.78c0-14.81.13-29.08-.18-43.35,0-1.5-2.61-4.17-4.1-4.23q-15.84-.69-31.71-.28c-1.53,0-4.26,2.56-4.29,4-.32,14.55-.2,29.1-.2,43.88Zm58.4-39c-40-42.94-123.16-38.31-155.5-1.08,8.06,5.54,8.06,5.54,15.47.73,36.75-23.85,88.21-23.52,124.45,1.47C195.53,75.17,199.7,74,204.67,69.6ZM61.37,177.69V228.4H97.2V177.69Zm35.8-59.61H61.24v50.37H97.17Zm45.1,110.68c1.43-.1,3.82-2.64,3.85-4.12.28-15.44.17-30.88.17-46.89H106.38v50.48C112.81,229.05,140.24,228.91,142.27,228.76ZM189,168.46V118.05H154.87v50.41Zm-34.68,9.23c0,16-.13,30.91.17,45.83,0,1.85,2.35,5.17,3.72,5.23,10.21.44,20.46.24,30.85.24v-51.3ZM207.61,78.8c-7.77.76-9.52,4.54-9.49,11.12q.33,67.09-.19,134.21c-.07,7.42,3,11.58,9.68,15.84ZM51.86,246.41h149c-4.79-6.68-9.4-10.08-17.45-10q-57.3.69-114.6,0C60.79,236.36,56,239.42,51.86,246.41Zm45.4-183A89.38,89.38,0,0,0,62.91,79.55a6.41,6.41,0,0,0-2.09,4.39c-.23,6.88-.34,13.78.07,20.64.09,1.57,2.37,4.27,3.72,4.31,10.76.36,21.53.2,32.65.2ZM45,76.86V239l2.92.92c1.95-4.59,5.56-9.17,5.6-13.78.42-46.3.16-92.6.36-138.9C53.94,80.72,51.31,77.73,45,76.86ZM154.88,61.93v46.72h34.7c0-8.74.12-17-.11-25.21a5.79,5.79,0,0,0-2.41-4.2C176.93,73.6,166.65,68.22,154.88,61.93Z"/>
+      </symbol>
+      <symbol id="materials-icon-3" viewBox="0 0 255.12 283.46"><path class="cls-1" d="M10.06,110c4.75-1.31,10.76-3.93,15.54-5.15,19-4.85,30.93-8.91,50-13.37a116.2,116.2,0,0,1,16.47-2.6c5.43-.17,10,3.4,15.2,5.76,4.52,2.05,14.82,4.38,11.83,15.23l3-1.66c1-4.65,2.06-9.28,2.92-14,2.48-13.58,2.45-13.58,16.61-13.88.94,0,1.89-.14,3.6-.28-.35-7.39,4.82-7.22,10.17-7.19,19.87.09,39.73.2,59.6,0,6.56-.08,8.9,2.44,8.74,8.93-.4,17.14,2,16.19-16.37,16.16q-26.57,0-53.14,0c-4.91,0-9.51-.24-8.89-6.64-7.51-2.58-9.53.7-10.61,7-1.6,9.45-5.27,20.64-19.25,25-8.59,2.66-8.73,13.37-8.73,13.37S99,145.32,51.86,125.27C38.2,119.46,23.13,116.76,8.68,113,7.54,112.81,5.37,110.83,10.06,110Zm209.68,71.38V154H166.37v27.37Zm-31.63,8.49H134.83v27.56h53.28Zm-52.77-71.65v27.14h53.3V118.18Zm60.53,92.33a56.75,56.75,0,0,0,0,7.32s20.47-.1,26.66-.1h26.89v-27.9h-53.5C195.92,197.21,196.09,203.87,195.87,210.51Zm-38.7-29.09V153.91H104.3v27.51Zm-114.77,0H95.15V153.88H42.4Zm20.9,35.79V189.94H10.57v27.31Zm9.31,0h52.85V189.82H72.61Z"/>
+      </symbol>
+      <symbol id="materials-icon-4" viewBox="0 0 255.12 283.46"><path class="cls-1" d="M129,242.87c-27.23,0-54.48.6-81.69-.19C24.67,242,7.8,223.87,7.65,201.2q-.37-53.68,0-107.35c.16-22.4,16.85-40.46,38.23-42.26,5.38-.46,9.55.53,9.53,7.1C55.32,93,55,127.4,55.11,161.76c0,7.72-3.11,10.64-10.62,11.79-17.18,2.64-27.1,16.34-25.2,33.4,1.53,13.63,14.67,24.69,30.65,25.12,13.8.37,27.61.1,41.42.1,38.48,0,77-.06,115.45,0,12,0,21.92-4.1,28.59-14.26,11.54-17.6.67-41.81-20.3-44.13-9.18-1-11.62-4.53-11.5-13.32.45-32.6.17-65.21.2-97.81,0-10.65,2.26-12.47,12.59-10.58,20.58,3.77,35.07,20.34,35.23,41.31q.4,53.74,0,107.51c-.16,24-18.75,42.14-42.78,42.26-26.64.12-53.28,0-79.92,0Zm-46.87-68-2.34-1.87-3.32,4.15V111.68l3.32,4.15L82.09,114l-7.16-9-7.16,9,2.35,1.87,3.31-4.15V177.2l-3.31-4.15-2.35,1.87,7.16,9Zm85.08,25.72-9-7.16-1.87,2.35,4.15,3.31H112.84l4.15-3.31-1.87-2.35-9,7.16,9,7.16,1.87-2.35-4.15-3.31h47.64l-4.15,3.31,1.87,2.35Zm-37.9-100.42h-62v3h62Zm-31,89h-31v-3h31Zm6.83,19h-3V193.06h3Zm67.33,0h-3V193.06h3Zm18.92-120.5H63.6V76.47H191.35ZM145.6,157.47H126.72v27.87H145.6Zm-43.25,31V158l34.78-33.84,34.73,35.51-.41,28.47Zm3-29.27v26.26l63.15-.36.34-24.28-31.77-32.49Zm69.6,7.67-37.78-38.44L98,166,85.49,153l52.06-50,13,13.53.06-6,16.75-.22-.09,22,20.14,21.52Zm-37.72-42.66,37.69,38.35,8.37-8.77-19-20.32.08-20.17-10.76.14-.1,10.43-16-16.67L89.74,153.07l8.38,8.72Z"/>
+      </symbol>
+      <symbol id="materials-icon-5" viewBox="0 0 255.12 283.46"><path d="M75.05,118.91c-2.78,2.36-6.69,4.17-8.13,7.17C63,134.26,60.13,143,56.84,151.43c-2.73,7-7.24,11.22-15.27,8.8s-7.44-8.37-5.86-15c3.24-13.66,5.5-27.58,9.27-41.08,1.1-4,5.41-9,9.15-9.91,17.61-4.39,35.43-8.26,53.38-10.9,18.58-2.73,26.31,5.79,23.94,24.31-.43,3.28.07,7.1-1.47,9.75-16.68,28.77-2.81,52.26,12.14,76,2.56,4.07,4.23,10.56,2.92,14.9-5.89,19.39-12.94,38.43-19.72,57.55-2.75,7.76-8.14,11.49-16.44,8.81-8.46-2.73-11.44-8.7-9.66-17.45,2.63-13,4.28-26.22,7.66-39,2.1-8,0-13.28-5.21-18.81-6.24-6.62-11.17-14-17.83-20.63-12.14-12.11-15.4-25.84-9.92-42,1.69-5,2.5-10.24,3.71-15.38Z"/><path d="M153.52,14c26.06,0,55.52-.12,81.58.28,3.79.06,11.29-1.23,11.29,4.55s-8.94,5.66-8.94,5.66a34.44,34.44,0,0,0-7.6.5c0,14-.93,30,.78,44.12.16,2,.47,4.52.47,4.52s15.84,0,15.16,7.35c.13,4.29-6.71,4.13-9.84,4.17-28.42.31-80.06-1.73-86.38-2-2.42-2-4.49-7.63-.32-9.48s11.87-.9,21.49-2.41c0-11.67.24-25.62-.25-39.55-.08-2.3-.19-6.93-4.86-6.93-4.34,0-8.58-2.8-11.94-5.56C152.33,14.36,153.12,14.89,153.52,14Z"/><path d="M91.43,29.26c-2.89,4.6-4,24-2.83,37.17.67,7.22,6.1,13,3.67,13.5C73.33,83.72,45.6,82.81,25.08,83c-2.6,0-9.77.54-12.59-1.44-1.1-.77-.71-.43-.71-2,0-1.16-.48-3.44.22-4.22,3.71-4.14,16.93-2.72,16.93-2.72s.84-12.19.54-24.6c.46-7,.08-14,.08-20.19a36.09,36.09,0,0,0-3.11-2.13c-4.57-2.29-13.54-.15-13.74-6.81S22.77,14.4,27.84,14.3c25.7-.47,53.26-.19,80.26,1.46C102.85,19.44,95.1,23.43,91.43,29.26Z"/><path d="M159.39,48.3c0,15.83-12.46,28.11-28.43,28.07a27.87,27.87,0,0,1-28-28.45,28.22,28.22,0,1,1,56.44.38Z"/><path d="M70.75,172.53c7.77,9.41,13.92,13.61,20.1,22.23,1.52,2.13,1.14,7.11-.33,9.65-7.62,13.23-22,39.7-29.85,52.78-4.74,7.84-9.14,8.63-17.07,4.57s-8-12.07-4.75-19.5C47.75,222,61.28,194.25,70.75,172.53Z"/><path d="M134.43,114.89c3.5-8.5.83-14.4,2.17-23.42,17.46-8.86,54.81,4.25,77.87-1.77.56,1.25.21,4,.76,5.3-2.37,2.67-6,3.84-8.88,5.63C168,124.31,158.77,118.94,134.43,114.89Z"/><path class="cls-1" d="M218,26.12V73.65H183.46V26.12Z"/><path class="cls-1" d="M76,72H41.67V26.25H76Z"/>
+      </symbol>
+      <symbol id="materials-icon-6" viewBox="0 0 255.12 283.46"><path d="M32.4,214.94V123.08L11.25,122,87.78,32.7c11,12.79,21,25.19,32.06,36.62a24.08,24.08,0,0,0,14.75,6.88c17.76.83,42.22,1.7,60,2,3.54.06,11.56,1.73,13.72,4,12.43,13.13,15.6,25.8,29,40.78-6.28.65-12.13-.41-17.66.17,0,28.68.11,91.8.11,91.8H208.05l-.21-21.14H188.17l-.07,21.14h-7.39l0-20.78H160.24L160,214.94H148.24V123.05l-4,0v91.93Zm18.78-60.83c1.21.25,3.21-.31,4.42-.06,3.42.56,4.29.39,4.5,3.81.62,10.06.5,44.19.5,44.19l8.37-.13s.19-32.73.19-45.4h37.29c0,13.54.19,45.67.19,45.67H115s-.29-29.28-.35-38.64c-.06-10.23,3.06-5.86,9.6-9.73-9.43-11-24-27.95-36.4-42.36C75.43,126,62.91,140.44,51.18,154.11ZM180.39,141V123.37h-20V141Zm7.53-18v17.58h19.89V123Zm-7.09,24.84H160.44v15.9h20.39Zm6.75,15.74h20V148h-20Zm-6.87,7.21h-20.4v16.12h20.4Zm27.34.13H187.82v15.86h20.23Z"/><path d="M13.59,228.36v-8.44H244.16v8.44Z"/>
+      </symbol>
+    </svg>ssssssss
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/fancybox/jquery.fancybox.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- Map Google-->  
+    <!-- <script src="js/map.js"></script> -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDM6bEdhU2PlfcDWLQrZW3iDNzefeIPJEY&callback=initMap&language=uk&region=UA" async defer></script> -->
+  </body>
+</html>
