@@ -1313,7 +1313,7 @@ td {
 	display: block;
 	width: 100%;
 	height: 11px;
-	background: url('../img/icons/under-line.png) no-repeat center center/100px;
+	background: url(../img/icons/under-line.png) no-repeat center center/100px;
 	position: absolute;
 	top: 100%;
 	left: 0;
@@ -2133,13 +2133,13 @@ footer {
 	margin-right: 10px;
 }
 .project__content .project__content-cost::before {
-	background: no-repeat center/80% url('../img/icons/portfolio_cost.svg);
+	background: no-repeat center/80% url(../img/icons/portfolio_cost.svg);
 }
 .project__content .project__content-square::before {
-	background: no-repeat center/80% url('../img/icons/portfolio_square.svg);
+	background: no-repeat center/80% url(../img/icons/portfolio_square.svg);
 }
 .project__content .project__content-map::before {
-	background: no-repeat center/80% url('../img/icons/portfolio_map.svg);
+	background: no-repeat center/80% url(../img/icons/portfolio_map.svg);
 }
 .project__slider {
 	flex: 2;
