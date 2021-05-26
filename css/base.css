@@ -358,7 +358,6 @@ header {
 .main-menu__list {
 	max-width: 1400px;
 	margin: 0 auto;
-	padding: 0!important;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -387,7 +386,7 @@ header {
 
 .main-menu__list ul {
     display: none;
-	height: 390px;
+	height: 223px;
 }
 .main-menu__list li:hover > ul {
     display: flex;
@@ -1107,7 +1106,7 @@ header {
 	border-radius: 3px;
 }
 .instalment__form form {
-	margin-right: -48px;
+	display: flex;
 }
 .instalment__form form p {
 	display: flex;
@@ -1118,7 +1117,6 @@ header {
 .instalment__form input:not([type="submit"])  {
     display: block;
     width: 90%;
-	margin: 0;
     padding: .375rem 7.5px;
     font-size: 16px;
     line-height: 1.5;
@@ -1143,6 +1141,10 @@ header {
 .instalment-form__text img {
 	width: 20px;
 	margin-right: 10px;
+}
+.instalment__form-btn {
+	display: flex;
+	margin: auto;
 }
 
 /* ===============================
@@ -2563,6 +2565,9 @@ footer {
 		align-items: center;
 		border-right: none;
 		padding: 25px;
+	}
+	.instalment__form form {
+		flex-direction: column;
 	}
 	.instalment__form input:not([type="submit"]) {
 		width: 100%;
