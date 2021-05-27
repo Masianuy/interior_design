@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate">
+    <meta name="author" content="Ideal HOUSE">
+     <!--Favicon-->
+     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon"/>
+    <!-- CUSTOM STYLE CSS-->
+    <link  href="js/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- HEADER
+      ============================== -->
+      <header>
+        <div class="header-top">
+          <p class="header-top__city">Ваше місто:
+            <select class="header-top__city-select" name="city">
+              <option value="#" selected="selected">Київ</option>
+              <option value="#">Ірпінь</option>
+              <option value="#">Буча</option>
+              <option value="#">Гостомель</option>
+              <option value="#">Ворзель</option>
+              <option value="#">Бориспіль</option>
+              <option value="#">Вишгород</option>
+            </select>
+            <span class="icon-caret-down2"></span>
+          </p>
+          <form role="search" method="get" id="searchform" class="header__search" action="https://ih13/">
+            <input type="text" value="" name="s" id="s" class="search-field">
+            <input type="submit" id="searchsubmit" value=" ">
+            <svg width="30" height="30" fill="#e1c32f" class="search-send">
+              <use href="#search"></use>
+            </svg>
+          </form>
+          <div class="header-top__contacts">
+            <p>Буча, вул. Івана Кожедуба, 3А</p>
+            <p>ЖК "Millennium State"</p>
+          </div>
+          <div class="header-top__contacts">
+            <p>пн-пт - 9.00 - 18.00</p>
+            <p>сб - 9.00 - 14.00</p>
+            <p>нд - вихідний</p>
+          </div>
+        </div>
+        <div class="header-middle">
+          <a id="header-logo" href="index.html">
+            <img id="logo_big" src="img/icons/logo.svg" alt="logo">
+          </a>
+          <ul class="header-middle__menu">
+            <li class="header-middle__menu-item">
+              <a href="about-us.html" class="header-middle-menu-link">Про нас</a>
+            </li>
+            <li class="header-middle__menu-item">
+              <a href="#" class="header-middle-menu-link">Калькулятор</a>
+            </li>
+            <li class="header-middle__menu-item">
+              <a href="#" class="header-middle-menu-link">Ціни</a>
+            </li>
+            <li class="header-middle__menu-item">
+              <a href="#" rel="nofollow" class="header-middle-menu-link">Портфоліо</a>
+            </li>
+            <li class="header-middle__menu-item">
+              <a href="#" rel="nofollow" class="header-middle-menu-link">Акції і скидки</a>
+            </li>
+            <li class="header-middle__menu-item">
+              <a href="#" rel="nofollow" class="header-middle-menu-link">Контакти</a>
+            </li>
+          </ul>
+          <div class="header-middle__contact">
+            <div class="header-middle__phone">
+              <a href="tel:+38099 099 99 99" class="header-middle__phone-number">+38 099 099 99 99</a>
+            </div>
+            <a data-fancybox data-src="#modal" href="javascript:;" class="header-middle__callback modal__popup">
+              <svg width="28" height="28" class="header-middle__callback-icon">
+                <use href="#icon_phone"/>
+              </svg>
+              <span>Замовити дзвінок</span>
+            </a>
+          </div>
+          
+          <nav class="header__big-menu">
+            <button class="big-menu button_hamburger"><span></span type="button"></button>
+          </nav>
+
+          <nav id="menu-hidden__wrap" class="menu-hidden__wrap">
+            <ul class="menu-hidden__list">
+              <li>
+                <a href="about_us.html" title="Про нас">Ремонт квартир</a>
+              </li>
+              <li>
+                <a href="features.html" title="Послуги">Ремонт кімнат</a>
+              </li>
+              <li>
+                <a href="portfolio.html" title="Портфоліо">Ремонт будинків</a>
+              </li>
+              <li>
+                <a href="contact.html" title="Контакти">Дизайн</a>
+              </li>
+              <li>
+                <a href="features.html" title="Послуги">Фасад</a>
+              </li>
+              <li>
+                <a href="portfolio.html" title="Портфоліо">Оздоблення</a>
+              </li>
+              <li>
+                <a href="portfolio.html" title="Портфоліо">УКР</a>
+              </li>
+              <li>
+                <a href="portfolio.html" title="Портфоліо">РУС</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- <div id="modal">
+            <div id="modal-window">
+              <p class="modal__title">Замовити дзвінок</p>
+              <div class="modal__inner">
+                <div class="modal__inner-item modal__inner-item-1">
+                  <img src="img/icons/face.png" alt="face">
+                  <p class="modal__inner-item-time">Перезвоним в течение 5-10 минут с 8:00 до 22:00 </p>
+                </div>
+                <div class="modal__inner-item modal__inner-item-2">
+                  <form method="get">
+                    <label for="mname">Ваше ім'я</label><br>
+                    <input type="text" id="mname" name="mname" placeholder="Alex"><br>
+                    <label for="lname">Номер телефону</label><br>
+                    <input type="tel" value="+380" required id="lname" name="lname"><br><br>
+                    <input type="submit" value="Відправити" class="btn-gold modal__popup">
+                  </form> 
+                </div>
+                <div class="modal__inner-item modal__inner-item-3">
+                  <p class="modal__inner-item-text">Бесплатно проконсультируем по ремонтным вопросам</p>
+                  <p class="modal__inner-item-text">Бесплатно проконсультируем по ремонтным вопросам</p>
+                  <p class="modal__inner-item-text">Бесплатно проконсультируем по ремонтным вопросам</p>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+        </div>
+      </header>
+      <nav class="header-bottom header-bottom__main-menu-fixed">
+        <ul class="main-menu__list container">
+          <li>
+            <a href="remont-kvartir.html">Ремонт квартир</a>
+            <ul class="sub-menu">
+              <li class="sub-menu__item">
+                <a href="#">Ремонт 1-кімнатної квартири</a>
+              </li>
+              <li class="sub-menu__item">
+                <a href="#">Ремонт 2-кімнатної квартири</a>
+              </li>
+              <li class="sub-menu__item">
+                <a href="#">Ремонт 3-кімнатної квартири</a>
+              </li>
+              <li class="sub-menu__item">
+                <a href="#">Ремонт 4-кімнатної квартири</a>
+              </li>
+              <li class="sub-menu__item">
+                <a href="#">Ремонт в новобудові</a>
+              </li>
+              <li class="sub-menu__item">
+                <a href="#">Ремонт вторинного житла</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="features.html">Ремонт кімнат</a>
+            <ul class="sub-menu">
+              <li class="sub-menu__item">
+                <a href="#">Ремонт кухні</a>
+              </li>
+              <li class="sub-menu__item">
+                <a href="#">Ремонт ванної кімнати</a>
+              </li>
+              <li class="sub-menu__item">
+                <a href="#">Ремонт дитячої кімнати</a>
+              </li>
+              <li class="sub-menu__item">
+                <a href="#">Ремонт вітальні</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="portfolio.html">Ремонт будинків</a>
+          </li>
+          <li>
+            <a href="contact.html">Дизайн</a>
+          </li>
+          <li>
+            <a href="features.html">Фасад</a>
+          </li>
+          <li>
+            <a href="portfolio.html">Оздоблення</a>
+        </ul>
+      </nav> 
+      
+      <section id="section-portfolio">
+        <div class="container">
+          <h1 class="portfolio__title">Портфоліо</h1>
+        </div>
+      </section>
+
+      <div class="container">
+        <div class="project__gallery">
+
+          <div class="project__slider">
+            <div class="project__slide project__slide-active">
+                <img src="img/portfolio/01.jpg" alt="Первый слайд">
+            </div>
+            <div class="project__slide">
+                <img src="img/portfolio/02.jpg" alt="Первый слайд">
+            </div>
+            <div class="project__slide">
+                <img src="img/portfolio/03.jpg" alt="Первый слайд">
+            </div>
+            <div id="project__slide-prev">❮</div>
+            <div id="project__slide-next">❯</div>
+          </div>
+
+          <div class="project__content">
+            <p>10 000 грн.</p>
+            <p>12м<sup>2</sup></p>
+            <p>58 днів</p>
+            <p>Київ, вул.Дмитрівска</p>
+            <a data-fancybox="" data-src="#modal" href="javascript:;" class="project__btn btn-gold">Замовити дзвінок</a>
+          </div>
+        </div>
+
+        <div class="project__discription">
+          <div class="project__text">
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+          </div>  
+          <ul class="project__works-list">
+            <li>It is a long established fact that a reader</li>
+            <li>It is a long established</li>
+            <li>It is a long established fact that a reader</li>
+            <li>It is a long established fact that a reader</li>
+            <li>It is a long established</li>
+            <li>It is a long established</li>
+          </ul>  
+          <ul class="project__works-list">
+            <li>It is a long established fact that a reader</li>
+            <li>It is a long established</li>
+            <li>It is a long established fact that a reader</li>
+            <li>It is a long established</li>
+          </ul>
+        </div>
+        
+          <div class="project__send-letter">
+            <h3>Бажаєте так само?</h3>
+            <div class="project__send-inner">
+              <div class="project__send-content">
+                <p class="project__form-subtitle">Подзвоніть нам</p>
+                <p class="project__content-phone">+38 099 099 99 99</p>
+                <p class="project__form-subtitle">Спитайте в соцмережах</p>
+                <ul class="project__social-list">
+                  <li class="project__social-item">
+                    <a href="https://www.facebook.com/idealhouse.bucha/?view_public_for=110336943678205" rel="noopener" title="facebook" target="_blank">
+                      <svg width="45" height="45" fill="#e1c32f">
+                        <use href="#facebook"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="project__social-item">
+                    <a href="https://www.instagram.com/ideal_house_design/?hl=uk" rel="noopener" title="instagram" target="_blank">
+                      <svg width="45" height="45" fill="#e1c32f">
+                        <use href="#instagram"/>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="project__form">
+                <p class="project__form-subtitle">Задайте питання персональному менеджеру</p>
+                <form method="get">
+                  <input type="text" id="mname" name="mname" placeholder="Alex" class="project__form-name">
+                  <input type="tel" value="+380" required id="lname" name="lname" class="project__form-tel">
+                  <textarea name="ltext" id="" cols="30" rows="7" class="letterboss__textarea"></textarea>
+                  <span class="letterboss__form-span">Я даю свою згоду на обробку персональних даних.</span>
+                  <input type="submit" value="Відправити" class="btn-gold letterboss__form-btn">
+                </form> 
+              </div>
+            </div>
+          </div>
+      </div>
+
+    <!-- FOOTER
+    ============================== -->
+    <footer>
+      <div id="footer">
+        <div class="footer-column footer-column-1">
+          <a id="footer-logo" rel="nofollow" href="index.html">
+            <img id="logo_big" src="img/icons/logo.svg" alt="logo">
+          </a>
+          <a href="#" class="footer-calculate">Калькулятор ремонту</a>
+        </div>
+        <div class="footer-menu">
+          <div class="footer-menu-list">
+            <p class="footer-column__title">Про IdealHouse</p>
+            <ul class="footer__menu">
+              <li class="footer__menu-item">
+                <a href="#" rel="nofollow" class="footer__menu-link">СМІ про нас</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" rel="nofollow" class="footer__menu-link">Вакансії</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" rel="nofollow" class="footer__menu-link">Відгуки</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" rel="nofollow" class="footer__menu-link">Команда</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-menu-list">
+            <p class="footer-column__title">Послуги</p>
+            <ul class="footer__menu">
+              <li class="footer__menu-item">
+                <a href="#" rel="nofollow" class="footer__menu-link">Ремонт квартир</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" rel="nofollow" class="footer__menu-link">Ремонт будинків</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" rel="nofollow" class="footer__menu-link">Ремонт кімнат</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" rel="nofollow" class="footer__menu-link">Ремонт офісів</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-column footer-column-4">
+          <p class="footer-column__title footer-column__title-social">Слідкуйте за нашими новинами та акціями:</p>
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a href="https://www.facebook.com/idealhouse.bucha/?view_public_for=110336943678205" rel="noopener" title="facebook" target="_blank">
+                <svg width="45" height="45" fill="#e1c32f">
+                  <use href="#facebook"/>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="https://www.instagram.com/ideal_house_design/?hl=uk" rel="noopener" title="instagram" target="_blank">
+                <svg width="45" height="45" fill="#e1c32f">
+                  <use href="#instagram"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2021 | Салон дизайну та ремонту Ideal House</p>
+      </div>
+    </footer>
+
+
+    <svg style="display: none;">
+      <symbol id="facebook" viewBox="0 0 512 512">
+        <path d="M316.75,216.812h-44.531v-32.5c0-9.969,10.312-12.281,15.125-12.281c4.781,0,28.767,0,28.767,0v-43.859L283.141,128   c-44.983,0-55.25,32.703-55.25,53.672v35.141H195.25V262h32.641c0,58.016,0,122,0,122h44.328c0,0,0-64.641,0-122h37.656   L316.75,216.812z"/>
+      </symbol>
+      <symbol id="instagram" viewBox="0 0 480 480">
+      <path d="m344 96h-208c-22.082031.027344-39.972656 17.917969-40 40v208c.027344 22.082031 17.917969 39.972656 40 40h208c22.082031-.027344 39.972656-17.917969 40-40v-208c-.027344-22.082031-17.917969-39.972656-40-40zm24 248c0 13.253906-10.746094 24-24 24h-208c-13.253906 0-24-10.746094-24-24v-208c0-13.253906 10.746094-24 24-24h208c13.253906 0 24 10.746094 24 24zm0 0"/>
+      <path d="m240 160c-44.183594 0-80 35.816406-80 80s35.816406 80 80 80 80-35.816406 80-80c-.046875-44.164062-35.835938-79.953125-80-80zm0 144c-35.347656 0-64-28.652344-64-64s28.652344-64 64-64 64 28.652344 64 64c-.039062 35.328125-28.671875 63.960938-64 64zm0 0"/>
+      <path d="m328 128c-13.253906 0-24 10.746094-24 24s10.746094 24 24 24 24-10.746094 24-24-10.746094-24-24-24zm0 32c-4.417969 0-8-3.582031-8-8s3.582031-8 8-8 8 3.582031 8 8-3.582031 8-8 8zm0 0"/>
+      </symbol>
+      <symbol id="search" viewBox="0 0 512 512">
+        <g>
+          <g>
+            <path d="M338.752,99.482c-65.965-65.974-173.306-65.974-239.277,0c-65.967,65.964-65.967,173.305,0,239.269    c63.708,63.712,165.99,65.879,232.342,6.544l13.413,13.413c-3.34,8.56-1.59,18.623,5.311,25.528l70.782,70.782    c9.305,9.31,24.397,9.305,33.696,0c9.31-9.299,9.31-24.387,0-33.696l-70.777-70.772c-6.905-6.899-16.988-8.65-25.533-5.311    l-13.413-13.423C404.636,265.465,402.463,163.188,338.752,99.482z M119.698,318.539c-54.819-54.819-54.819-144.015,0-198.834    c54.819-54.83,144.017-54.819,198.836,0s54.819,144.02,0,198.839S174.517,373.358,119.698,318.539z"/>
+            <path d="M153.1,151.877c23.944-23.95,51.774-41.331,81.037-52.169c-33.153-1.886-68.66,11.014-95.909,38.253    c-27.624,27.626-40.488,63.746-38.142,97.302C110.841,205.137,128.511,176.46,153.1,151.877z"/>
+          </g>
+        </g>
+      </symbol>
+      <symbol id="icon_phone" x="0px" y="0px" viewBox="0 0 59.997 59.997" style="enable-background:new 0 0 59.997 59.997;" xml:space="preserve">
+        <g>
+          <path d="M44.071,38.386c-0.895-0.51-1.83-0.779-2.704-0.779c-1.301,0-2.367,0.596-3.012,1.68c-1.021,1.221-2.287,2.646-2.592,2.867
+            c-2.378,1.61-4.237,1.429-6.295-0.629L17.982,30.038c-2.045-2.045-2.233-3.928-0.631-6.292c0.224-0.31,1.649-1.575,2.869-2.595
+            c0.778-0.464,1.312-1.151,1.546-1.996c0.311-1.123,0.081-2.444-0.653-3.731c-0.173-0.296-4.289-7.27-8.085-9.277
+            c-0.709-0.375-1.506-0.573-2.307-0.573c-1.318,0-2.558,0.514-3.489,1.445L4.695,9.556c-7.401,7.402-6.031,16.596,3.962,26.588
+            L23.362,50.85c5.745,5.746,11.224,8.659,16.281,8.659c0.001,0,0.001,0,0.001,0c3.721,0,7.188-1.581,10.306-4.698l2.537-2.537
+            c1.541-1.541,1.892-3.87,0.872-5.796C51.351,42.683,44.378,38.565,44.071,38.386z"/>
+        </g>
+      </symbol>
+    </svg>
+
+    <script src="js/portfolio_project.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
